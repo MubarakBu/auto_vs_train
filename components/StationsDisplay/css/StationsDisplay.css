@@ -1,0 +1,181 @@
+    #StationsDisplay {
+        margin: 100px 0 100px 0;
+
+    }
+
+
+
+/*STYLES BASED ON SCREEN SIZE. (WIDTH BASED ON BOOTSTRAP GRID)*/
+
+/*XL SCREENS*/
+@media screen and (min-width: 1200px) {
+    #StationsDisplay {
+        grid-column-start: 2;
+        grid-column-end:   4;
+        grid-row-start:    4;        
+    }
+
+    #connecting-line {
+        height:5px;
+        width: 100%;
+        background-color: #7293CB;
+        position: relative;
+        top: 14.5px;
+        left: 3px;
+        z-index: -1;
+    }
+
+    #dots {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+    }
+}
+
+/*L SCREENS*/
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    #StationsDisplay {
+        grid-column-start: 2;
+        grid-column-end:   4;
+        grid-row-start:    5;         
+    }
+
+    #connecting-line {
+        height:5px;
+        width: 100%;
+        background-color: #7293CB;
+        position: relative;
+        top: 14.5px;
+        left: 3px;
+        z-index: -1;
+    }
+
+    #dots {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+    }
+}
+
+/*M SCREENS*/
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    #StationsDisplay {
+        grid-column-start: 2;
+        grid-row-start:    5;  
+    }
+
+    #connecting-line {
+        width:5px;
+        position: relative;
+        z-index: -1;
+        background-color: #7293CB;
+        position: relative;
+        display: inline-block;
+        left: 94px;
+        top: 1px;
+    }
+
+    #stations-graphic {
+        display: flex;
+    }
+
+    #dots {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        left: 80px;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .station {
+        padding: 0 0 20px 0;
+    }
+}
+
+/*S SCREENS*/
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    #StationsDisplay {
+        grid-column-start: 2;
+        grid-row-start:    5;  
+
+    }
+
+    #connecting-line {
+        height:5px;
+        width: 100%;
+        position: relative;
+        top: 14.5px;
+        left: 3px;
+        z-index: -1;
+    }
+
+    #connecting-line {
+        width:5px;
+        position: relative;
+        z-index: -1;
+        background-color: #7293CB;
+        position: relative;
+        display: inline-block;
+        left: 54px;
+        top: 1px;
+    }
+
+    #stations-graphic {
+        display: flex;
+    }
+
+    #dots {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        left: 40px;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .station {
+        padding: 0 0 10px 0;
+    }
+}
+
+/*XS SCREENS*/
+@media screen and (max-width: 575px) {
+    #StationsDisplay {
+        grid-column-start: 2;
+        grid-row-start:    4;  
+
+    }
+
+    #connecting-line {
+        width:5px;
+        position: relative;
+        z-index: -1;
+        background-color: #7293CB;
+        position: relative;
+        display: inline-block;
+        left: 54px;
+        top: 1px;
+    }
+
+    #stations-graphic {
+        display: flex;
+    }
+
+    #dots {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        left: 40px;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .station {
+        padding: 0 0 10px 0;
+    }
+}

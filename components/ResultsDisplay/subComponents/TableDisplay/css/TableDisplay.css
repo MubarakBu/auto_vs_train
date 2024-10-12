@@ -1,0 +1,21 @@
+.table-tool-tip {
+    margin: 0 0 0 10px;
+}
+
+#tables {
+  display: table;
+  margin: 0 auto;
+}
+
+.outline {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+table td th {
+    margin: 0;    
+}
+
+table {
+    border-collapse: collapse;
+}

@@ -1,0 +1,91 @@
+
+
+/*STYLES BASED ON SCREEN SIZE. (WIDTH BASED ON BOOTSTRAP GRID)*/
+
+/*XL SCREENS*/
+@media screen and (min-width: 1200px) {
+
+    .chart-container {
+        width: 32% !important;
+        height: 300px;
+        display: inline-block;
+    }
+
+    #graphs {
+        display: flex;
+        flex-wrap: none;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+/*L SCREENS*/
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+
+    
+    .chart-container {
+        width: 33% !important;
+        height: 300px;
+        display: inline-block;
+    }
+
+    #graphs {
+        display: flex;
+        flex-wrap: none;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+/*M SCREENS*/
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    
+    .chart-container {
+        width: 85% !important;
+        height: 300px;
+        display: block;
+        margin: 0 auto 65px auto;
+    }
+
+    .chart-container .chart {
+        width: 100% !important;
+    }
+
+    #graphs {
+        width: 100%;
+    }
+}
+
+/*S SCREENS*/
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    
+    .chart-container {
+        width: 500px !important;
+        height: 300px;
+        display: block;
+        margin: 0 0 50px 0;
+    }
+
+    .chart-container .chart {
+        width: 100% !important;
+    }
+
+    #graphs {
+        width: 100%;
+    }
+}
+
+/*XS SCREENS*/
+@media screen and (max-width: 575px) {
+    
+    .chart-container {
+        width: 300px !important;
+        height: 300px;
+        display: block;
+        margin: 0 0 50px 0;
+    }
+
+    #graphs {
+        width: 100%;
+    }
+}

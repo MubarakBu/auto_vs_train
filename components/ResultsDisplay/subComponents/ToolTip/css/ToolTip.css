@@ -1,0 +1,22 @@
+.tool-tip a {
+    float: right;
+    display: inline-block;
+    color: white;
+    background-color: #727272;
+    border-radius: 50%;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    cursor: help;
+}
+
+.source-info-box {
+    display: block;
+    visibility: hidden;
+}
+
+.question-mark:hover + .source-info-box{
+    background-color: blue;
+    visiblity: visible;
+}

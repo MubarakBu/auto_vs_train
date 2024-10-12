@@ -1,0 +1,123 @@
+#ResultsDisplay {
+    padding: 0 0 20px 0;
+}
+
+
+
+#results-header {
+    margin: 0 0 20px 0;
+}
+
+#toggleResultsDisplay {
+    display: inline;
+    float: right;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#toggleResultsDisplay {
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    background: #7293CB;
+    color: #ffffff;
+    font-family: sans-serif;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 10px;
+
+}
+
+
+
+/*STYLES BASED ON SCREEN SIZE. (WIDTH BASED ON BOOTSTRAP GRID)*/
+
+/*XL SCREENS*/
+@media screen and (min-width: 1200px) {
+
+    #ResultsDisplay {
+        grid-column-start: 2;
+        grid-column-end:   4;
+        grid-row-start:    5;
+    }
+
+    #toggleResultsDisplay {
+        width: 206px;
+        height: 55px;  
+        font-size: 1rem;  
+        margin: 0;
+    }
+
+}
+
+/*L SCREENS*/
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+
+    #ResultsDisplay {
+        grid-column-start: 2;
+        grid-column-end:   4;
+        grid-row-start:    6;
+    }
+     
+    #toggleResultsDisplay {
+        width: 150px;
+        height: 40px;  
+        font-size: 1rem;  
+        margin: 0;
+    }
+    
+}
+
+/*M SCREENS*/
+@media screen and (max-width: 991px) and (min-width: 768px) {
+
+    #ResultsDisplay {
+        grid-column-start: 2;
+        grid-row-start:    6;
+    }
+     
+    #toggleResultsDisplay {
+        width: 206px;
+        height: 55px;  
+        font-size: 1rem;  
+        margin: 0;
+    }
+
+}
+
+/*S SCREENS*/
+@media screen and (max-width: 767px) and (min-width: 576px) {
+
+    #ResultsDisplay {
+        grid-column-start: 2;
+        grid-row-start:    6;
+    }
+     
+    #toggleResultsDisplay {
+        width: 206px;
+        height: 55px;  
+        font-size: 1rem;  
+        margin: 0;
+    }
+
+}
+
+/*XS SCREENS*/
+@media screen and (max-width: 575px) {
+ 
+    #ResultsDisplay {
+        grid-column-start: 2;
+        grid-row-start:    5;
+    }
+     
+    #toggleResultsDisplay {
+        width:  150px;
+        height: 40px;  
+        font-size: 1rem;  
+        margin: 0 15px 0 0;
+    }
+
+}

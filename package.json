@@ -1,0 +1,49 @@
+{
+  "name": "auto-vs-train",
+  "version": "1.0.0",
+  "description": "This is a website designed to allow the public to compare the costs (time, money, environmental impact) of traveling within Ohio, Michigan, Indian, and Pennsylvania via car or train.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.8",
+    "@mapbox/mapbox-gl-directions": "^4.0.3",
+    "@zeit/next-css": "^1.0.1",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "chart.js": "^2.9.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "formik": "^2.1.4",
+    "geolib": "^3.2.1",
+    "heapify": "^0.2.1",
+    "mapbox-gl": "^1.9.1",
+    "markerclustererplus": "^2.1.4",
+    "mysql2": "^2.1.0",
+    "next": "^9.2.1",
+    "next-images": "^1.3.0",
+    "public-ip": "^4.0.0",
+    "rc-tooltip": "^4.0.3",
+    "react": "^16.13.1",
+    "react-chartjs-2": "^2.9.0",
+    "react-dom": "^16.13.1",
+    "react-map-gl": "^5.2.3",
+    "react-mapbox-autocomplete": "^0.2.3",
+    "react-tooltip": "^4.2.5",
+    "sequelize": "^5.21.5",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^5.5.1"
+  }
+}

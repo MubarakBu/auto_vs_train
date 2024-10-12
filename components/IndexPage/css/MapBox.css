@@ -1,0 +1,104 @@
+#map-display {
+
+}
+
+.mapboxgl-canvas {
+    width:  100% !important;  
+    height: 100% !important;  
+}
+
+#map-display {
+    width:  100% !important;  
+    height: 100% !important;     
+}
+
+#mapBox {
+    width: 50%;
+
+    margin-left: auto;
+}
+
+
+/*STYLES BASED ON SCREEN SIZE. (WIDTH BASED ON BOOTSTRAP GRID)*/
+
+/*XL SCREENS*/
+@media screen and (min-width: 1200px) {
+    #map-display {
+        grid-column-start: 3;
+        grid-row-start: 3; 
+    }
+
+    #mapBox {
+        height: 450px; 
+    }
+
+    .map {
+        width: 100% !important;
+    }
+}
+
+/*L SCREENS*/
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    #map-display {
+        grid-column-start: 3;
+        grid-row-start: 3; 
+    }
+
+    #mapBox {
+        height: 450px; 
+    }
+
+    .map {
+        width: 100% !important;
+    }
+}
+
+/*M SCREENS*/
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    #map-display {
+        grid-column-start: 2;
+        grid-row-start: 4; 
+    }
+
+    #mapBox {
+        height: 350px; 
+    }
+
+    .map {
+        width: 85% !important;
+        margin: auto;
+    }
+}
+
+/*S SCREENS*/
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    #map-display {
+        grid-column-start: 2;
+        grid-row-start: 4; 
+    }
+
+    #mapBox {
+        height: 300px; 
+    }
+
+    .map {
+        width: 100% !important;
+        margin: auto;
+    }
+}
+
+/*XS SCREENS*/
+@media screen and (max-width: 575px) {
+    #map-display {
+        grid-column-start: 2;
+        grid-row-start: 3; 
+    }
+
+    #mapBox {
+        height: 300px; 
+    }
+
+    .map {
+        width: 100% !important;
+    }
+}

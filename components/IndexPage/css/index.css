@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #F1F3F5;
+    color: #595959;
+}
+
+
+/*UNIVERSAL STYLES*/
+#index-page {
+    display: grid;
+}
+
+.section-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 49px;  
+    display: inline-block;  
+}
+
+/*STYLES BASED ON SCREEN SIZE. (WIDTH BASED ON BOOTSTRAP GRID)*/
+
+/*XL SCREENS*/
+@media screen and (min-width: 1200px) {
+    #index-page {
+        /*padding | left column | right column | padding*/
+        grid-template-columns: 130px calc(50% - 130px) calc(50% - 130px) 130px;
+        grid-template-rows: 10px 100px 430px 
+            minmax(min-content, max-content) 
+            minmax(min-content, max-content);
+    }
+}
+
+/*L SCREENS*/
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    #index-page {
+        grid-template-columns: 107px calc(50% - 107px) calc(50% - 107px) 107px;
+        grid-template-rows: 10px 100px 430px 
+            minmax(min-content, max-content) 
+            minmax(min-content, max-content);
+    }
+}
+
+/*M SCREENS*/
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    #index-page {
+        grid-template-columns: 83px auto 83px;
+        grid-template-rows: 10px 100px 430px  
+            minmax(min-content, max-content) 
+            minmax(min-content, max-content);
+
+        padding: 0 0 80px 0;
+    }
+}
+
+/*S SCREENS*/
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    #index-page {
+        grid-template-columns: 40px auto  40px;
+        grid-template-rows: 10px 100px minmax(min-content, max-content) minmax(min-content, max-content)  
+            minmax(min-content, max-content) 
+            minmax(min-content, max-content);
+    }
+}
+
+/*XS SCREENS*/
+@media screen and (max-width: 575px) {
+    #index-page {
+        grid-template-columns: 10px calc(100% - 20px) 10px;
+        grid-template-rows: 100px minmax(min-content, max-content)  300px  
+            minmax(min-content, max-content) 
+            minmax(min-content, max-content);
+    }
+}

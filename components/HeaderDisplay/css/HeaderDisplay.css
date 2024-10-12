@@ -1,0 +1,65 @@
+#HeaderDisplay {
+
+    display: inline-block;
+
+}
+
+#HeaderDisplay span {
+    color: #595959;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+/*STYLES BASED ON SCREEN SIZE. (WIDTH BASED ON BOOTSTRAP GRID)*/
+
+/*XL SCREENS*/
+@media screen and (min-width: 1200px) {
+    #HeaderDisplay {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-column-end: 3;
+    }
+}
+
+/*L SCREENS*/
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    #HeaderDisplay {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-column-end: 3;
+    }
+}
+
+/*M SCREENS*/
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    #HeaderDisplay {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-column-end: 3;
+    }
+}
+
+/*S SCREENS*/
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    #HeaderDisplay {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-column-end: 3;
+    }
+}
+
+/*XS SCREENS*/
+@media screen and (max-width: 575px) {
+    #HeaderDisplay {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        text-align: center;
+    }
+
+    #HeaderDisplay span {
+        vertical-align: middle;
+        display: inline-block;
+    }
+}
